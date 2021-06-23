@@ -1,0 +1,197 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #E4DFDA;
+    background-color: #167F8D;
+}
+
+hr {
+    margin: 0 !important;
+}
+
+#top {
+    background-image: url('https://www.jagdhof.com/grafik/resize/1920x880_upload-website-pageimage--welcome-to-the-dolcevita-hotel-jagdhof--2_448_3840x1760.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+}
+
+.style-four {
+    height: 50px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+#main-image > * {
+    margin: 200px auto;
+    width: 50%;
+    text-align: center;
+}
+
+#main-image {
+    width: 100%;
+    height: 100vh;
+}
+
+.btn {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    border-radius: 1em;
+    border: 1px solid #eab771;
+    transition: all 0.3s;
+}
+
+.top-btn {
+    color: black;
+    background-color: bisque;
+}
+
+.btn:hover {
+    color: black;
+    background-color: #eab771;
+    border-radius: 0.5rem;
+    transition: all 0.3s; 
+}
+
+#mid {
+    display: grid;
+}
+
+#mid > * {
+    width: 100%;
+    margin: auto auto 100px auto;
+    background-color: #11576A;
+}
+
+.image-left {
+    float: left;
+    width: 35%;
+    
+}
+
+.image-right {
+    float: right;
+    width: 35%;
+}
+
+.text-left {
+    float: left;
+    width: 65%;
+}
+
+.text-right {
+    float: right;
+    width: 65%;
+}
+
+.mySlides {
+    display:none;
+}
+
+.mainContainer {
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+
+.mainContainer > img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.slider-button-left {
+    position: absolute;
+    top:50%;
+    left: 0%;
+    transform:translate(0%,-50%);
+    float: left;
+}
+
+.slider-button-right {
+    position: absolute;
+    top:50%;
+    left: 100%;
+    transform:translate(-100%,-50%);
+    float: right;
+}
+
+#bottom {
+    text-align: center;
+    display: flex;
+    margin: auto;
+    width: 60%;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+#bottom > * {
+    width: 50%;
+    margin: auto;
+}
+
+.btn-down {
+    border-radius: 0.9rem;
+    background-color: #167F8D;
+    color: white;
+    border: 2px solid #eab771;
+}
+
+.btn-down:hover {
+    color: white;
+    border-radius: 0.5rem;
+}
+
+
+
+/* Contact us */
+
+h1 {
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.contact_div {
+	display: flex;
+	width: 70%;
+	margin: auto;
+}
+
+div > label,
+input,
+textarea {
+	width: 100%;
+	margin-top: 5px;
+    resize: none;
+    color: #E4DFDA;
+}
+
+div > input, textarea {
+    border: 1.5px solid white;
+    border-radius: 0.5rem;
+}
+
+#cb {
+	justify-content: flex-end;
+	margin-top: 20px;
+}
+
+.form_contact {
+    margin: auto;
+    background-color: #0B3C49;
+    width: 50%;
+    padding: 30px;
+    border-radius: 1.2rem;
+} 
+
+.send {
+    margin: auto 10px;
+}

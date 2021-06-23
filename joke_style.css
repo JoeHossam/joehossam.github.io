@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    /* color: #C5C6C7; */
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    height: 545vh;
+    background-color: rgb(128, 172, 169);
+    padding: 0;
+    margin:0;
+}
+
+#top{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+#top_img{
+    background-image: url(imgs/man-works-late-at-office-computer.jpg);
+    filter: blur(8px);
+    -webkit-filter: blur(10px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#top_text{
+    color: #C5C6C7;
+    background-color: rgba(31, 40, 51, 0.4);
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 2;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    border-top: 3px solid #45A29E;
+    border-bottom: 3px solid #45A29E;
+}
+
+.top_button{
+    color: #C5C6C7;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    height: 10vh;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 3px solid #45A29E;
+    border-radius: 2%;
+    text-align: center;
+    font-weight: bold;
+    z-index: 99;
+    transition: 0.2s;
+    font-size: 1.2rem;
+}
+
+.top_button:hover{
+    background-color: #45A29E;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#navbar{
+    color: #C5C6C7;
+    list-style-type: none;
+    border-top: 8px solid #0B0C10;
+    background-color: #1F2833;
+    height: 8.7vh;
+    overflow: hidden;
+    padding-left: 5vh;
+}
+
+#navbar a{
+    display: block;
+    font-size: 1.2rem;
+    padding: 10px;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.2s;
+    color: #C5C6C7;
+}
+
+.active,#navbar a:hover{
+    transition: 0.2s;
+    border-top: 2px solid #45A29E;
+    color: #45A29E;
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+.fixed + #values {
+    margin-top: 10.7vh;
+}
+
+#values{
+    margin: 2vh;
+    /* height: 35vh; */
+    display: inline-block;
+}
+
+.values{
+    width: 28%;
+    height: 40vh;
+    float: left;
+    padding: 20px;
+    margin: 5vh;
+    background-color: rgba(31, 40, 51, 0.445);
+    color: #C5C6C7;
+}
+
+.nav_fix{
+    height: 9.5vh;
+}
+
+#about_me{
+    /* margin-top: 2vh; */
+    height: 60vh;
+    width: 100%;
+    background-color: rgb(97, 134, 132);
+}
+
+#img_me {
+    margin-left: 5vh;
+    margin-right: 5vh;
+    float: left;
+    height: 60vh;
+    width: 30%;
+    background-image:url(imgs/140.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#text_me {
+    padding: 1vh;
+    color: white;
+    font-size: 1.2rem;
+    overflow: auto;
+    height: 60vh;
+}
+
+#font_awesome {
+    display: inline-block;
+}
+
+.font_awesome {
+    /* font-size: 0.8rem; */
+    /* height: 20vh; */
+    width: 20%;
+    padding: 1vh;
+    float: left;
+}
+
+#resume{
+    padding: 2vh 20vh;
+    position: relative;
+    text-align: center;
+    height: 45vh;
+    width: 100%;
+    background-color: rgb(97, 134, 132);
+    color: #C5C6C7;
+}
+
+.h1_content{
+    font: bolder;
+}
+
+#resume_button{
+    color: #C5C6C7;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    height: 10vh;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 3px solid #45A29E;
+    border-radius: 2%;
+    text-align: center;
+    font-weight: bold;
+    z-index: 99;
+    transition: 0.2s;
+    font-size: 1.2rem;
+}
+
+#resume_button:hover{
+    background-color: #45A29E;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#gallery{
+    display: inline-block;
+    height: 153vh;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: rgb(111, 196, 191);
+}
+
+.img_hover{
+    width: 28%;
+    height: 40vh;
+    float: left;
+    margin: 5vh;
+    overflow: hidden;
+    border: 3px solid black;
+}
+
+.img_gal{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    transition: 0.2s;
+}
+
+.img_gal:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    scale: 2;
+    transform: scale(1.3);
+    transition: 0.4s;
+}
+
+#contact_me{
+    font: bold;
+    color: rgb(151, 151, 151);
+    width: 100%;
+    position: relative;
+    background-color: rgb(97, 97, 97);
+    height: 80vh;
+    display: inline-block;
+}
+
+#data{
+    width: 46%;
+    float: left;
+    padding: 2vh;
+    margin: 5vh 2vh;
+}
+
+#input{
+    position: relative;
+    font-size: 1.2rem;
+    margin: 5vh 2vh;
+    padding: 2vh;
+    padding-right: 7vh;
+    width: 46%;
+    float: right;
+}
+
+#input input{
+    width: 100%;
+    height: 4vh;
+    border: 2px solid #45A29E;
+    border-radius: 2%;
+}
+
+#contact_me_button {
+    position: absolute;
+    color: #C5C6C7;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    height: 7vh;
+    width: 15%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 3px solid #45A29E;
+    border-radius: 2%;
+    text-align: center;
+    font-weight: bold;
+    z-index: 99;
+    transition: 0.4s;
+    font-size: 1.2rem;
+}
+
+#contact_me_button:hover{
+    background-color: #45A29E;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#footer{
+    position: relative;
+    display: inline-block;
+    height: 6vh;
+    width: 100%;
+    background-color: rgba(31, 40, 51);
+    margin-top: -1vh;
+    color: white;
+    font-size: 1.1rem;
+    overflow: hidden;
+    margin-bottom: -5px;
+}
+
+.f_icon{
+    font-size: 1.3rem;
+    padding: 0 0.5vh;
+}
+
+#footer_text{
+    float: left;
+    padding: 1vh 5vh;
+}
+
+#footer_icons{
+    float: right;
+    padding: 1vh 5vh;
+}

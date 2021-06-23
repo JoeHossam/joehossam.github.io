@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hotel_style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Hotel</title>
+</head>
+
+<body>
+    <div id="top">
+        <div id="main-image">
+            <h1 style="color: #eab771; ">Welcome To our Hotel Website</h1>
+            <div><a href="#mid"><button class="top-btn btn">Learn More</button></a></div>
+        </div>
+    </div>
+    <hr class="style-four">
+    <div id="mid">
+        <div>
+            <img class="image-left" src="https://storage.googleapis.com/static-content-hc/sites/default/files/cataloina_porto_doble_balcon2_2.jpg" alt="">
+            <div class="text-right">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, eos? Molestias eveniet est asperiores cumque doloremque iusto, porro rerum nesciunt?</p>
+            </div>
+        </div>
+
+        <div>
+            <img class="image-right" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuINx3Y2_f5Zj-E_Df6mqlypWbG_poxYWqzQ&usqp=CAU" alt="">
+            <div class="text-left">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, eos? Molestias eveniet est asperiores cumque doloremque iusto, porro rerum nesciunt?</p>
+            </div>
+        </div>
+
+        <div>
+            <img class="image-left" src="https://res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1567777866/ox7urecjh3wsw76s32dq.jpg" alt="">
+            <div class="text-right">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, eos? Molestias eveniet est asperiores cumque doloremque iusto, porro rerum nesciunt?</p>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <h3>Gallery</h3>
+        <div class="mainContainer">
+            <img class="mySlides" src="http://floridahotelsuites.com/wp-content/uploads/2020/06/celebrity-suite-1024x615.jpg" style="width:100%">
+            <img class="mySlides" src="http://www.citiesoutlook.org/wp-content/uploads/Five-Tips-For-Renting-A-Hotel-Suite.jpg" style="width:100%">
+            <img class="mySlides" src="https://specials-images.forbesimg.com/imageserve/5e65bf427d6f2600068efdeb/960x0.jpg?fit=scale" style="width:100%">
+            <img class="mySlides" src="https://www.edenresort.com/wp-content/uploads/2018/03/King-Select-and-King-Select-Adult-P0000041-1-1600x1005-1-1024x643.jpg" style="width:100%">
+            <button class="w3-button w3-black slider-button-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black slider-button-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+    </div>
+    <hr class="style-four">
+    <div id="bottom">
+        <p>Like our Hotel?</p>
+        <a href="contact_us.html"><button class="btn btn-down">Contact us</button></a>
+    </div>
+
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
