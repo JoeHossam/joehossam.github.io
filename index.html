@@ -1,28 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinland</title>
+    <link rel="stylesheet" href="main.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
-</head>
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
 
-<body>
-    <div id="main">
-        <div class="content">
-            <h3>Front End Websites</h3>
-            <h6>made only with html and css</h6>
-            <ul>
-                <li><a target="_blank" href="trip.html">Trip Reservations</a></li>
-                <li><a target="_blank" href="joke.html">Joke Portfolio</a></li>
-                <li><a target="_blank" href="hotel.html">Hotel</a></li>
-                <li><a target="_blank" href="car_dealership.html">Car Dealership</a></li>
-            </ul>
-        </div>
+    <!-- end of google fonts -->
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h4>Vinland</h4>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+
+      <div class="burger" onclick="toggle()">
+        <i class="fa fa-bars"></i>
+      </div>
+    </nav>
+
+    <div class="banner-title">
+      <h1 class="banner-text">somewhere Away from here</h1>
+      <div class="banner-img">
+        <img src="https://www.w3schools.com/w3images/mountainskies.jpg" alt="">
+      </div>
     </div>
-    <p style="color: red;">I do not own any of the pictures in any of these websites*</p>
-</body>
 
+    <div class="main-body">
+      <section id="gallery">
+        <h3 class="section-head">Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gall-img"><img src="https://bigseventravel.com/wp-content/uploads/2020/06/josh-reid-meOFNlRbHmY-unsplash-1920x1280.jpg" alt=""></div>
+          <div class="gall-img"><img src="https://www.w3schools.com/w3images/nature.jpg"></div>
+          <div class="gall-img"><img src="https://papers.co/wallpaper/papers.co-np32-mountain-wood-night-dark-river-nature-blue-36-3840x2400-4k-wallpaper.jpg"></div>
+          <div class="gall-img"><img src="https://eskipaper.com/images/peaceful-wallpaper-1.jpg"></div>
+          <div class="gall-img"><img src="http://wallpaperstock.net/dark-beauty_wallpapers_14757_2560x1440.jpg"></div>
+          <div class="gall-img"><img src="https://cdn.mwallpapers.com/photos/celebrities/hd-wallpapers/digital-art-fantasy-art-sky-landscape-clouds-dark-android-iphone-hd-wallpaper-background-downloadhd-wallpapers-desktop-background-android-iphone-1080p-4k-1o3or.jpg"></div>
+        </div>
+        <div class="center">
+          <a href="#" class="main-btn">View More</a>
+        </div>
+      </section>
+
+      <section id="about">
+        <h3 class="section-head">About</h3>
+        <div class="about">
+          <div class="about-img"><img src="https://www.static-src.com/wcsstore/Indraprastha/images/brandlogo//BRD-51953/vinland-logo.jpeg" alt=""></div>
+          <div class="about-text">
+            <h4 class="about-header">Lorem, ipsum.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit tempora impedit, ex eligendi id a odit facilis cumque omnis quis quasi consequuntur inventore consequatur et?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed error doloribus molestias omnis, cupiditate rem id delectus voluptas deserunt porro ex exercitationem. Dignissimos, asperiores. Corporis quo eum consequuntur veritatis quibusdam?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magnam cupiditate adipisci sequi magni cum reiciendis voluptatum aliquam laborum necessitatibus, eveniet fugiat harum earum repellat placeat sapiente repellendus debitis id?</p>
+            <button type="button">Book Now</button>
+          </div>
+        </div>
+        <div class="center center2">
+          <a href="#" class="main-btn">View More</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- JS -->
+    <script>
+      const toggle = () => document.querySelector(".nav-links").classList.toggle("nav-active");
+    </script>
+
+  </body>
 </html>
